@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>営魚魚 (SalesFin) プライバシーポリシー</title>
+    <title>営魚魚 (SalesFin) サポート</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap');
@@ -12,13 +12,23 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
-        h1, h2 {
+        h1, h2, summary {
             font-family: 'Inter', 'Noto Sans JP', sans-serif;
             font-weight: 700;
         }
         .lang-btn.active {
             background-color: #3b82f6; /* bg-blue-600 */
             color: #ffffff; /* text-white */
+        }
+        details > summary {
+            cursor: pointer;
+        }
+        details[open] > summary ~ * {
+            animation: sweep .5s ease-in-out;
+        }
+        @keyframes sweep {
+            0%    {opacity: 0; transform: translateY(-10px)}
+            100%  {opacity: 1; transform: translateY(0)}
         }
     </style>
 </head>
@@ -34,168 +44,132 @@
             </div>
         </div>
 
-        <!-- Japanese Privacy Policy -->
-        <div id="privacy-ja" lang="ja">
+        <!-- Japanese Support Page -->
+        <div id="support-ja" lang="ja">
             <div class="bg-white p-6 sm:p-10 rounded-xl shadow-sm">
-                <h1 class="text-2xl sm:text-3xl font-bold mb-6 text-center">プライバシーポリシー</h1>
-                <p class="text-sm text-gray-500 mb-8 text-center">最終更新日: 2025年8月11日</p>
+                <div class="text-center mb-10">
+                    <h1 class="text-3xl sm:text-4xl font-bold">営魚魚 サポート</h1>
+                    <p class="text-gray-600 mt-2">ご利用ありがとうございます。問題解決のための情報をご案内します。</p>
+                </div>
 
-                <div class="space-y-8">
+                <div class="space-y-10">
                     <div>
-                        <h2 class="text-xl font-semibold border-l-4 border-blue-500 pl-4 mb-4">はじめに</h2>
+                        <h2 class="text-xl font-semibold border-l-4 border-blue-500 pl-4 mb-4">よくあるご質問 (FAQ)</h2>
+                        <div class="space-y-4">
+                            <details class="group rounded-lg bg-gray-50 p-4">
+                                <summary class="font-semibold text-lg list-none group-hover:text-blue-600">Q. 顧客データはどこに保存されますか？ 安全ですか？</summary>
+                                <p class="text-gray-700 leading-relaxed mt-3 pt-3 border-t">
+                                    お客様が入力されたすべての顧客データは、お使いのスマートフォン・タブレットの内部にのみ保存されます。当方のサーバーを含め、外部にデータが送信・保管されることは一切ありませんので、ご安心ください。
+                                </p>
+                            </details>
+                            <details class="group rounded-lg bg-gray-50 p-4">
+                                <summary class="font-semibold text-lg list-none group-hover:text-blue-600">Q. 登録した顧客が地図に表示されません。</summary>
+                                <p class="text-gray-700 leading-relaxed mt-3 pt-3 border-t">
+                                    以下の2点をご確認ください。<br>
+                                    1. 顧客情報の住所が正しく入力されているかご確認ください。都道府県名から入力すると、より正確に位置が特定されます。<br>
+                                    2. デバイスの「設定」アプリから、「営魚魚」に対する位置情報サービスの利用が許可されているかご確認ください。
+                                </p>
+                            </details>
+                             <details class="group rounded-lg bg-gray-50 p-4">
+                                <summary class="font-semibold text-lg list-none group-hover:text-blue-600">Q. 「要訪問」と判断される日数を変更したいです。</summary>
+                                <p class="text-gray-700 leading-relaxed mt-3 pt-3 border-t">
+                                    アプリ画面下部のタブバーから「設定」を開き、「訪問管理設定」の項目で日数を自由に変更できます。変更後は「設定を保存」ボタンをタップしてください。
+                                </p>
+                            </details>
+                            <details class="group rounded-lg bg-gray-50 p-4">
+                                <summary class="font-semibold text-lg list-none group-hover:text-blue-600">Q. 機種変更をします。データを引き継ぐことはできますか？</summary>
+                                <p class="text-gray-700 leading-relaxed mt-3 pt-3 border-t">
+                                    本アプリには、専用のデータバックアップ機能はありません。要望が多ければデータ共有機能を実装いたします。
+                                </p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-semibold border-l-4 border-blue-500 pl-4 mb-4">お問い合わせ</h2>
                         <p class="text-gray-700 leading-relaxed">
-                            本プライバシーポリシーは、長政輝（以下「当方」といいます。）が提供するスマートフォン向けアプリケーション「営魚魚」（以下「本アプリ」といいます。）における利用者情報の取扱いについて説明するものです。本アプリをご利用いただく前に、本ポリシーをよくお読みいただき、内容をご理解ください。
+                            上記のFAQで問題が解決しない場合や、ご意見・ご要望がございましたら、以下のメールアドレスまでお気軽にご連絡ください。
+                        </p>
+                        <div class="mt-4 text-center">
+                            <a href="mailto:tftf161107@icloud.com" class="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">
+                                tftf161107@icloud.com
+                            </a>
+                        </div>
+                    </div>
+                     <div>
+                        <h2 class="text-xl font-semibold border-l-4 border-blue-500 pl-4 mb-4">関連リンク</h2>
+                        <p class="text-gray-700 leading-relaxed">
+                            <a href="./privacy-policy.html" class="text-blue-600 hover:underline">プライバシーポリシーはこちら</a>
                         </p>
                     </div>
-
-                    <div>
-                        <h2 class="text-xl font-semibold border-l-4 border-blue-500 pl-4 mb-4">1. 取得する情報</h2>
-                        <p class="text-gray-700 leading-relaxed mb-4">本アプリにおいて、当方は以下の利用者情報を取得する場合があります。</p>
-                        <ul class="list-disc list-inside space-y-3 pl-4 text-gray-700">
-                            <li>
-                                <strong>利用者が入力する顧客情報</strong><br>
-                                本アプリの機能を利用するために、利用者が任意で入力する顧客データ（会社名、住所、担当者名、電話番号、メールアドレス等）を取得します。これらの情報は、利用者のデバイス内にのみ保存され、当方のサーバーに送信されることはありません。
-                            </li>
-                            <li>
-                                <strong>位置情報</strong><br>
-                                本アプリは、地図機能において利用者の現在地を表示するために、利用者のデバイスから位置情報を取得します。この情報は、地図上での現在地表示の目的にのみ使用され、当方が収集、保存、追跡することはありません。位置情報サービスの利用は、デバイスの設定でいつでもオフにすることができます。
-                            </li>
-                            <li>
-                                <strong>アプリの利用状況に関する情報（アナリティクス）</strong><br>
-                                本アプリのサービス品質向上のため、個人を特定できない匿名の統計データとして、利用状況（クラッシュレポート、パフォーマンスデータ、機能の利用頻度など）を取得する場合があります。
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-semibold border-l-4 border-blue-500 pl-4 mb-4">2. 情報の利用目的</h2>
-                        <p class="text-gray-700 leading-relaxed">
-                            当方は、取得した利用者情報を以下の目的で利用します。
-                        </p>
-                        <ul class="list-disc list-inside space-y-3 pl-4 text-gray-700 mt-4">
-                            <li>本アプリの機能を提供、維持、改善するため。</li>
-                            <li>本アプリに関する利用者からのお問い合わせに対応するため。</li>
-                            <li>本アプリの利用規約や本ポリシーの変更を通知するため。</li>
-                            <li>新たなサービスの開発や機能改善の分析を行うため。</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-semibold border-l-4 border-blue-500 pl-4 mb-4">3. 第三者への情報提供</h2>
-                        <p class="text-gray-700 leading-relaxed">
-                            当方は、以下の場合を除き、取得した利用者情報を第三者に提供することはありません。
-                        </p>
-                        <ul class="list-disc list-inside space-y-3 pl-4 text-gray-700 mt-4">
-                            <li>利用者本人の同意がある場合。</li>
-                            <li>法令に基づき開示が求められた場合。</li>
-                            <li>人の生命、身体または財産の保護のために必要がある場合であって、本人の同意を得ることが困難であるとき。</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-semibold border-l-4 border-blue-500 pl-4 mb-4">4. 安全管理措置</h2>
-                        <p class="text-gray-700 leading-relaxed">
-                            利用者が入力した顧客情報は、利用者のデバイス内に安全に保管されます。当方は、利用者情報の紛失、盗用、悪用、不正アクセス、漏洩、改ざんおよび破壊を防ぐための合理的な措置を講じます。
-                        </p>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-semibold border-l-4 border-blue-500 pl-4 mb-4">5. お問い合わせ窓口</h2>
-                        <p class="text-gray-700 leading-relaxed">
-                            本ポリシーに関するご意見、ご質問、その他利用者情報の取扱いに関するお問い合わせは、下記の窓口までお願いいたします。<br>
-                            連絡先: [連絡先メールアドレス]
-                        </p>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-semibold border-l-4 border-blue-500 pl-4 mb-4">6. プライバシーポリシーの変更</h2>
-                        <p class="text-gray-700 leading-relaxed">
-                            当方は、法令の改正や事業内容の変更等に応じて、本ポリシーの内容を改定することがあります。重要な変更がある場合は、本アプリ内での通知や、App Store上の掲載内容の更新をもって公表いたします。
-                        </p>
-                    </div>
+                </div>
+                <div class="text-center text-sm text-gray-400 mt-12 pt-6 border-t">
+                    &copy; 2025 Masaki Cho. All Rights Reserved.
                 </div>
             </div>
         </div>
 
-        <!-- English Privacy Policy -->
-        <div id="privacy-en" lang="en" class="hidden">
-            <div class="bg-white p-6 sm:p-10 rounded-xl shadow-sm">
-                <h1 class="text-2xl sm:text-3xl font-bold mb-6 text-center">Privacy Policy</h1>
-                <p class="text-sm text-gray-500 mb-8 text-center">Last Updated: August 11, 2025</p>
+        <!-- English Support Page -->
+        <div id="support-en" lang="en" class="hidden">
+             <div class="bg-white p-6 sm:p-10 rounded-xl shadow-sm">
+                <div class="text-center mb-10">
+                    <h1 class="text-3xl sm:text-4xl font-bold">SalesFin Support</h1>
+                    <p class="text-gray-600 mt-2">Thank you for using our app. Here you'll find information to help resolve any issues.</p>
+                </div>
 
-                <div class="space-y-8">
+                <div class="space-y-10">
                     <div>
-                        <h2 class="text-xl font-semibold border-l-4 border-blue-500 pl-4 mb-4">Introduction</h2>
+                        <h2 class="text-xl font-semibold border-l-4 border-blue-500 pl-4 mb-4">Frequently Asked Questions (FAQ)</h2>
+                        <div class="space-y-4">
+                            <details class="group rounded-lg bg-gray-50 p-4">
+                                <summary class="font-semibold text-lg list-none group-hover:text-blue-600">Q. Where is my customer data stored? Is it secure?</summary>
+                                <p class="text-gray-700 leading-relaxed mt-3 pt-3 border-t">
+                                    All customer data you enter is stored exclusively on your smartphone or tablet. It is never transmitted or saved to our servers or any external location. Your data is secure and private.
+                                </p>
+                            </details>
+                            <details class="group rounded-lg bg-gray-50 p-4">
+                                <summary class="font-semibold text-lg list-none group-hover:text-blue-600">Q. My registered clients are not appearing on the map.</summary>
+                                <p class="text-gray-700 leading-relaxed mt-3 pt-3 border-t">
+                                    Please check the following two points:<br>
+                                    1. Ensure that the address for the client is entered correctly. Including the country and state/prefecture can improve accuracy.<br>
+                                    2. Go to your device's "Settings" app and confirm that you have granted location access permissions for "SalesFin".
+                                </p>
+                            </details>
+                             <details class="group rounded-lg bg-gray-50 p-4">
+                                <summary class="font-semibold text-lg list-none group-hover:text-blue-600">Q. How do I change the time period for the "needs visit" alert?</summary>
+                                <p class="text-gray-700 leading-relaxed mt-3 pt-3 border-t">
+                                    You can customize this in the "Settings" tab at the bottom of the screen. Adjust the number of days under "Visit Management Settings" and tap the "Save Settings" button.
+                                </p>
+                            </details>
+                            <details class="group rounded-lg bg-gray-50 p-4">
+                                <summary class="font-semibold text-lg list-none group-hover:text-blue-600">Q. I'm getting a new phone. How can I transfer my data?</summary>
+                                <p class="text-gray-700 leading-relaxed mt-3 pt-3 border-t">
+                                    This app does not have a dedicated data backup function. If there is sufficient demand, we will implement a data sharing function.
+                                </p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-semibold border-l-4 border-blue-500 pl-4 mb-4">Contact Us</h2>
                         <p class="text-gray-700 leading-relaxed">
-                            This Privacy Policy explains how Masaki Cho ("we," "us," or "our") handles user information in connection with the mobile application "SalesFin" ("the App"). Please read this policy carefully to understand our practices before using the App.
+                            If the FAQ does not resolve your issue, or if you have feedback or suggestions, please feel free to contact us at the email address below.
+                        </p>
+                        <div class="mt-4 text-center">
+                            <a href="mailto:tftf161107@icloud.com" class="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">
+                                tftf161107@icloud.com
+                            </a>
+                        </div>
+                    </div>
+                     <div>
+                        <h2 class="text-xl font-semibold border-l-4 border-blue-500 pl-4 mb-4">Related Links</h2>
+                        <p class="text-gray-700 leading-relaxed">
+                            <a href="./privacy-policy.html" class="text-blue-600 hover:underline">Read our Privacy Policy</a>
                         </p>
                     </div>
-
-                    <div>
-                        <h2 class="text-xl font-semibold border-l-4 border-blue-500 pl-4 mb-4">1. Information We Collect</h2>
-                        <p class="text-gray-700 leading-relaxed mb-4">In the App, we may collect the following user information:</p>
-                        <ul class="list-disc list-inside space-y-3 pl-4 text-gray-700">
-                            <li>
-                                <strong>Customer Information You Provide</strong><br>
-                                To use the features of the App, you may voluntarily enter customer data (e.g., company name, address, contact person, phone number, email address). This information is stored exclusively on your device and is not transmitted to our servers.
-                            </li>
-                            <li>
-                                <strong>Location Information</strong><br>
-                                The App collects location data from your device to display your current location on the map feature. This information is used solely for the purpose of showing your position on the map and is not collected, stored, or tracked by us. You can disable location services at any time in your device settings.
-                            </li>
-                            <li>
-                                <strong>App Usage Information (Analytics)</strong><br>
-                                To improve the quality of our service, we may collect anonymous, non-personally identifiable statistical data about your use of the App, such as crash reports, performance data, and feature usage frequency.
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-semibold border-l-4 border-blue-500 pl-4 mb-4">2. Purpose of Use</h2>
-                        <p class="text-gray-700 leading-relaxed">
-                            We use the collected information for the following purposes:
-                        </p>
-                        <ul class="list-disc list-inside space-y-3 pl-4 text-gray-700 mt-4">
-                            <li>To provide, maintain, and improve the features of the App.</li>
-                            <li>To respond to inquiries from users regarding the App.</li>
-                            <li>To notify users of changes to our Terms of Service or this Privacy Policy.</li>
-                            <li>To analyze data for the development of new services and feature improvements.</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-semibold border-l-4 border-blue-500 pl-4 mb-4">3. Provision of Information to Third Parties</h2>
-                        <p class="text-gray-700 leading-relaxed">
-                            We will not provide user information to third parties without the user's consent, except in the following cases:
-                        </p>
-                        <ul class="list-disc list-inside space-y-3 pl-4 text-gray-700 mt-4">
-                            <li>When we have the user's explicit consent.</li>
-                            <li>When disclosure is required by law.</li>
-                            <li>When it is necessary for the protection of human life, body, or property, and it is difficult to obtain the user's consent.</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-semibold border-l-4 border-blue-500 pl-4 mb-4">4. Security Measures</h2>
-                        <p class="text-gray-700 leading-relaxed">
-                            Customer information entered by the user is stored securely on the user's device. We take reasonable measures to protect user information from loss, theft, misuse, unauthorized access, disclosure, alteration, and destruction.
-                        </p>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-semibold border-l-4 border-blue-500 pl-4 mb-4">5. Contact Information</h2>
-                        <p class="text-gray-700 leading-relaxed">
-                            If you have any opinions, questions, or other inquiries regarding this policy or the handling of user information, please contact us at the following address:<br>
-                            Contact: [Contact Email Address]
-                        </p>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-semibold border-l-4 border-blue-500 pl-4 mb-4">6. Changes to this Privacy Policy</h2>
-                        <p class="text-gray-700 leading-relaxed">
-                            We may revise this Privacy Policy in response to changes in laws, regulations, or our business practices. Any significant changes will be announced via in-app notifications or by updating the policy on the App Store.
-                        </p>
-                    </div>
+                </div>
+                <div class="text-center text-sm text-gray-400 mt-12 pt-6 border-t">
+                    &copy; 2025 Masaki Cho. All Rights Reserved.
                 </div>
             </div>
         </div>
@@ -204,20 +178,20 @@
     <script>
         const btnJa = document.getElementById('btn-ja');
         const btnEn = document.getElementById('btn-en');
-        const privacyJa = document.getElementById('privacy-ja');
-        const privacyEn = document.getElementById('privacy-en');
+        const supportJa = document.getElementById('support-ja');
+        const supportEn = document.getElementById('support-en');
 
         btnJa.addEventListener('click', () => {
-            privacyJa.classList.remove('hidden');
-            privacyEn.classList.add('hidden');
+            supportJa.classList.remove('hidden');
+            supportEn.classList.add('hidden');
             btnJa.classList.add('active');
             btnEn.classList.remove('active');
             document.documentElement.lang = 'ja';
         });
 
         btnEn.addEventListener('click', () => {
-            privacyEn.classList.remove('hidden');
-            privacyJa.classList.add('hidden');
+            supportEn.classList.remove('hidden');
+            supportJa.classList.add('hidden');
             btnEn.classList.add('active');
             btnJa.classList.remove('active');
             document.documentElement.lang = 'en';
